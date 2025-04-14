@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivanpol - Artículos Policiales</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #001f3f;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 40px;
+    }
+    h1 {
+      margin: 0;
+    }
+    nav {
+      background-color: #003366;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .banner {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg');
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px black;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .producto {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .producto img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ivanpol</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="Bandera de España">
+  </header>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#quienes">Quiénes Somos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <div class="banner">
+    Artículos Policiales Profesionales
+  </div>
+  <section class="productos" id="catalogo">
+    <div class="producto">
+      <img src="https://via.placeholder.com/200x150?text=Chaleco" alt="Chaleco">
+      <h3>Chaleco Antibalas</h3>
+      <p>Protección balística nivel IIIA. Ligero y cómodo.</p>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/200x150?text=Grilletes" alt="Grilletes">
+      <h3>Grilletes de Acero</h3>
+      <p>Alta resistencia con doble cierre de seguridad.</p>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/200x150?text=Botas" alt="Botas">
+      <h3>Botas Tácticas</h3>
+      <p>Impermeables, resistentes y cómodas para largas jornadas.</p>
+    </div>
+  </section>
+</body>
+</html>
